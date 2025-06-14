@@ -1,0 +1,77 @@
+/* Background Styling */
+.contact-container {
+    background: url("../pictures/contact_bg.avif") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+  }
+  
+  /* Dark Overlay for Readability */
+  .contact-overlay {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 3rem;
+    border-radius: 15px;
+    max-width: 90%;
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Contact Form Card */
+  .contact-card {
+    background: rgba(255, 255, 255, 0.547); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-field:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Map Container */
+  .map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #0041a3);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .contact-overlay {
+      padding: 2rem;
+      width: 95%;
+    }
+    .contact-card {
+      padding: 1.5rem;
+    }
+  }
+  
